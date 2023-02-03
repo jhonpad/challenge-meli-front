@@ -1,0 +1,34 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/girds.scss';
+
+@import '../../../styles/breakpoints.scss';
+
+.navbar{
+    background: $primary;
+    height: 48px;
+    padding: 8px 0;
+    width: 100%;
+    
+    .nav {
+        @include content-grid;
+        
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        max-width: $width-xl;
+    }
+
+    .logo {
+        height: 100%;
+        grid-column: span 1;
+        height: 32px;
+        img {
+            height: 100%;
+        }
+    }
+
+    .content {
+        height: 100%;
+        grid-column: span 11;
+    }
+}

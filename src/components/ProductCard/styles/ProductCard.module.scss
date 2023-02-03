@@ -1,0 +1,62 @@
+@import '../../../styles/girds.scss';
+@import '../../../styles/colors.scss';
+
+.productCard{
+    border-bottom: 1px solid $background;
+    width: 100%;
+
+    display: flex;
+    padding: 16px 0;
+    grid-column: span 12;
+    padding: 16px;
+
+    .image {
+        height: 180px;
+        width: 180px;
+        
+        img {
+            border-radius: 4px;
+            object-position: center center;
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }        
+    }
+
+    .wrapperInfo {
+        padding-left: 16px;
+        @include content-grid;
+
+        .content {
+
+            grid-column: span 4;
+            .price {
+                display: flex;
+    margin-bottom: 32px;
+                p {
+                    margin: 0;
+                    font-size: 24px;
+                }
+            }
+            .freeShipping {
+                height: 16px;
+                width: 16px;
+                margin-left: 8px;
+                img {
+                    object-position: center center;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: fill;
+                } 
+            }
+
+
+            .title {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}

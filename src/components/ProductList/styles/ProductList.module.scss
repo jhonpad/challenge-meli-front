@@ -1,0 +1,9 @@
+@import '../../../styles/girds.scss';
+
+.productlist {
+    @include content-grid;
+    background: #FFFFFF;
+    border-radius: 4px;
+
+    
+}

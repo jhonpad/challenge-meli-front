@@ -1,0 +1,43 @@
+@import '../../../styles/girds.scss';
+@import '../../../styles/colors.scss';
+
+.searchinput{
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #FFFFFF;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 32px 0 16px;
+
+    form {
+        width: 100%;
+    }
+
+    .input{
+        border: 0;
+        width: 100%;
+        outline: 0;
+        appearance: none;
+        height: 100%;
+        color: $dark;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .button {
+        padding: 8px;
+        position: absolute;
+        right: 0;
+        border: 0;
+        top: 0;
+        height: 100%;
+        background: $background;
+
+        &:hover {
+        cursor: pointer;
+
+        }
+    }
+}

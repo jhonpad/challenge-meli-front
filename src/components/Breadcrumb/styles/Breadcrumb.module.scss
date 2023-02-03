@@ -1,0 +1,10 @@
+@import '../../../styles/colors.scss';
+
+.breadcrumb{
+    padding: 16px 0;
+    height: 56px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark;
+}

@@ -1,0 +1,21 @@
+$width-xs: 0;
+$width-s: 360px;
+$width-m: 768px;
+$width-l: 1024px;
+$width-xl: 1180px;
+
+$grid-breakpoints: (
+  xs: 0,
+  s: 360px,
+  m: 768px,
+  l: 1024px,
+  xl: 1280px,
+) !default;
+
+@mixin width($grid-breakpoints) {
+  @if map-has-key($grid-breakpoints, $grid-breakpoints) {
+    width: inspect(map-get($grid-breakpoints, $grid-breakpoints))
+  } @else {
+    @warn 'Valor no recibido o no coicide con `#{$grid-breakpoints}`. '
+  }
+}

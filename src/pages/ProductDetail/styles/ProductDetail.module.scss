@@ -1,0 +1,71 @@
+@import '../../../styles/girds.scss';
+@import '../../../styles/colors.scss';
+
+.productdetail {
+    @include content-grid;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 32px;
+
+    .image {
+        height: 480px;
+        max-width: 680px;
+        grid-column: span 7;
+
+        img {
+            border-radius: 4px;
+            object-position: center center;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .content {
+
+        grid-column: span 5;
+
+        .condition {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .title {
+            margin-bottom: 32px;
+            font-size: 24px;
+        }
+
+        .price {
+            margin-bottom: 32px;
+            font-size: 46px;
+        }
+
+        .buttons {
+            margin-right: 32px;
+
+            button {
+                background: $secudary;
+                border: none;
+                border-radius: 4px;
+                color: $white;
+                font-size: 16px;
+                font-weight: 500;
+                height: 48px;
+                width: 100%;
+            }
+        }
+    }
+
+    .description {
+
+        grid-column: span 7;
+
+        p {
+            margin: 32px 0;
+            font-size: 16px;
+            color: $dark;
+        }
+
+        
+    }
+}
