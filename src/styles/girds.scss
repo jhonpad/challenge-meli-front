@@ -1,6 +1,7 @@
+@use "sass:math";
 
 @mixin content-grid {
-    $col: 100% / 12;
+    $col: math.div(100%, 12);
     $col-1: span 1;
     $col-2: span 2;
     $col-3: span 3;
